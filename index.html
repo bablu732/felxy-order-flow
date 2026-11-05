@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ғᴇʟxʏ ORDER FLOW</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#080d16;color:#fff;
+ font-family:Arial,sans-serif;padding:16px
+}
+header{display:flex;justify-content:space-between;
+ align-items:center;border-bottom:1px solid #273246;
+ padding-bottom:16px}
+h2{color:#d6ad55;margin:0}
+.tag{color:#42d99b;font-size:12px}
+.price{font-size:28px;font-weight:bold;margin:22px 0 5px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{background:#111b2b;border:1px solid #26364c;
+ border-radius:12px;padding:16px;margin:12px 0}
+.card h3{font-size:13px;color:#9eacc1}
+.value{font-size:20px;font-weight:bold}
+.chart{height:420px;overflow:hidden;border-radius:12px}
+iframe{width:100%;height:100%;border:0}
+footer{text-align:center;color:#718096;
+ font-size:12px;padding:20px}
+</style>
+</head>
+<body>
+
+<header>
+ <h2>ғᴇʟxʏ</h2>
+ <span class="tag">ORDER FLOW</span>
+</header>
+
+<p style="color:#9eacc1">MARKET OVERVIEW</p>
+<div class="price">XAUUSD</div>
+<p class="tag">GOLD / US DOLLAR</p>
+
+<div class="grid">
+ <div class="card">
+  <h3>MARKET</h3>
+  <div class="value">XAUUSD</div>
+ </div>
+ <div class="card">
+  <h3>STATUS</h3>
+  <div class="value">Chart feed</div>
+ </div>
+ <div class="card">
+  <h3>BUY VOLUME</h3>
+  <div class="value">Awaiting data</div>
+ </div>
+ <div class="card">
+  <h3>SELL VOLUME</h3>
+  <div class="value">Awaiting data</div>
+ </div>
+</div>
+
+<div class="card">
+ <h3>LIVE GOLD CHART</h3>
+ <div class="chart">
+  <iframe
+   src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_chart&symbol=FX_IDC%3AXAUUSD&interval=5&hidesidetoolbar=0&symboledit=0&saveimage=0&toolbarbg=080d16&theme=dark&style=1&timezone=Etc%2FUTC&withdateranges=1&hideideas=1&studies=%5B%5D&locale=en">
+  </iframe>
+ </div>
+</div>
+
+<div class="grid">
+ <div class="card">
+  <h3>CVD</h3>
+  <div class="value">Awaiting data</div>
+ </div>
+ <div class="card">
+  <h3>ORDER IMBALANCE</h3>
+  <div class="value">Awaiting data</div>
+ </div>
+</div>
+
+<div class="card">
+ <h3>FOOTPRINT ANALYSIS</h3>
+ <p style="color:#9eacc1">
+  Bid × Ask volume analysis will appear here
+  after connecting a suitable trade-data feed.
+ </p>
+</div>
+
+<footer>
+ ғᴇʟxʏ ORDER FLOW · Built for traders
+ <br>Market data availability depends on provider.
+</footer>
+
+</body>
+</html>
